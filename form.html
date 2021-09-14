@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/select.css">
+		<link rel="stylesheet" href="css/style_form.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+		<title>Бриф</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="form">
+				<form action="#" id="form" class="form__body">
+					<h1 class="form__title">Заполнить бриф</h1>
+					<div class="form__item">
+						<label for="formName" class="form__label">Имя*:</label>
+						<input id="formName" type="text" name="name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*:</label>
+						<input id="formEmail" type="text" name="email" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<label for="formPhone" class="form__label">Телефон*:</label>
+						<input id="formPhone" type="text" name="phone" class="form__input _req _phone">
+					</div>
+					<div class="form__item">
+						<div class="form__label">Выберите услугу</div>
+						<div class="options">
+							<div class="options__item">
+								<input id="formVisit" type="radio" value="visit" name="option" class="options__input">
+								<label for="formVisit" class="options__label"><span>Cайт визитка</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formLanding" type="radio" value="landing" name="option" class="options__input">
+								<label for="formLanding" class="options__label"><span>Landing Page</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formMagazine" type="radio" value="magazine" name="option" class="options__input">
+								<label for="formMagazine" class="options__label"><span>Интернет-магазин</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formHotel" type="radio" value="hotel" name="option" class="options__input">
+								<label for="formHotel" class="options__label"><span>Сайт для отеля</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formSMM" type="radio" value="smm" name="option" class="options__input">
+								<label for="formSMM" class="options__label"><span>SMM-продвижение</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formSEO" type="radio" value="seo" name="option" class="options__input">
+								<label for="formSEO" class="options__label"><span>SEO-продвижение</span></label>
+							</div>
+							<div class="options__item">
+								<input id="formApp" type="radio" value="app" name="option" class="options__input">
+								<label for="formApp" class="options__label"><span>Разработка мобильных приложений</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Комментарий:</label>
+						<textarea name="message" id="formMessage" class="form__input"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Прикрепить фото(макет, дизайн)</div>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+								<div class="file__button">Выбрать</div>
+							</div>
+							<div id="formPreview" class="file__preview"></div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+							<label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствии с <a href="">Условиями</a>*</span></label>
+						</div>
+					</div>
+					<button onclick="http://primetimedev.com.ua/thankyou.html" type="submit" class="form__button">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<script src="js/select.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
